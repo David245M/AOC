@@ -4,6 +4,9 @@
   "type": "module",
   "description": "Advent of Code CLI template",
   "scripts": {
+    "create": "node commands/create",
+    "start": "node commands/solve",
+    "dev": "node --watch-path=years --watch-preserve-output commands/solve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
