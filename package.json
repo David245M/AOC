@@ -17,6 +17,7 @@
   "author": "Michael Kokadii <misha2479k@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "lodash-es": "^4.17.21",
     "yargs": "^17.7.2"
   }
 }
