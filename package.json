@@ -1,0 +1,19 @@
+{
+  "name": "aoc-template",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Advent of Code CLI template",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AOC",
+    "advent-of-code",
+    "cli"
+  ],
+  "author": "Michael Kokadii <misha2479k@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
