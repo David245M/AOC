@@ -36,7 +36,7 @@ fs.writeFileSync(path.resolve(dayPath, 'input.txt'), '')
 fs.writeFileSync(path.resolve(dayPath, 'input-test.txt'), '')
 
 const scriptContent = `function formatInput(input) {
-  return input.split('\\r\\n').map((row) => row.split(''))
+  return input.split('\\n').map((row) => row.split(''))
 }
 
 export function part1(input) {

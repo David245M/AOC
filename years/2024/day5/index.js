@@ -2,10 +2,10 @@ import { groupBy } from "lodash-es"
 import { sumAll } from "../../../utils.js"
 
 function formatInput(input) {
-  const [rules, updates] = input.split('\r\n\r\n')
+  const [rules, updates] = input.split('\n\n')
   return [
-    rules.split('\r\n').map(rule => rule.split('|').map(Number)),
-    updates.split('\r\n').map(update => update.split(',').map(Number))
+    rules.split('\n').map(rule => rule.split('|').map(Number)),
+    updates.split('\n').map(update => update.split(',').map(Number))
   ]
 }
 

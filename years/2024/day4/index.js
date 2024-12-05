@@ -1,7 +1,7 @@
 import { transpose } from "../../../utils.js"
 
 function formatInput(input) {
-  return input.split('\r\n').map((row) => row.split(''))
+  return input.split('\n').map((row) => row.split(''))
 }
 
 function getAllDiagonals(matrix) {

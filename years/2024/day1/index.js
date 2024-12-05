@@ -1,5 +1,5 @@
 function formatInput(input) {
-  return input.split('\r\n').map((row) => row.split(/\s+/).map(Number))
+  return input.split('\n').map((row) => row.split(/\s+/).map(Number))
 }
 
 export function part1(input) {
