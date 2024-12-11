@@ -1,4 +1,4 @@
-import { sumAll } from "../../../utils.js"
+import { sum } from "lodash-es"
 
 function formatInput(input) {
   return input.split('\n').map((row) => {
@@ -45,7 +45,7 @@ export function part1(input) {
     return equasionSolutions.includes(result)
   })
 
-  return sumAll(trueEquasions.map(([result]) => result))
+  return sum(trueEquasions.map(([result]) => result))
 }
 
 export function part2(input) {
@@ -66,5 +66,5 @@ export function part2(input) {
     return equasionSolutions.includes(result)
   })
 
-  return sumAll(trueEquasions.map(([result]) => result))
+  return sum(trueEquasions.map(([result]) => result))
 }

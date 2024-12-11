@@ -1,3 +1,5 @@
+import { sum } from "lodash-es"
+
 function formatInput(input) {
   return input.split('\n').map((row) => row.split(/\s+/).map(Number))
 }
@@ -12,10 +14,8 @@ export function part1(input) {
   const distances = Array.from({ length: columns[0].length }, (_v, i) => (
     Math.abs(columns[0][i] - columns[1][i])
   ))
-  
-  const sumOfDistances = distances.reduce((sum, a) => sum + a, 0)
 
-  return sumOfDistances
+  return sum(distances)
 }
 export function part2(input) {
   const rows = formatInput(input)
@@ -29,7 +29,5 @@ export function part2(input) {
     return num * count
   })
   
-  const sumOfSimilarities = similarities.reduce((sum, a) => sum + a, 0)
-
-  return sumOfSimilarities
+  return sum(similarities)
 }

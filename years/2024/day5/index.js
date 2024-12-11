@@ -1,5 +1,4 @@
-import { groupBy } from "lodash-es"
-import { sumAll } from "../../../utils.js"
+import { groupBy, sum } from "lodash-es"
 
 function formatInput(input) {
   const [rules, updates] = input.split('\n\n')
@@ -40,7 +39,7 @@ export function part1(input) {
 
   const middleElements = validUpdates.map(getMiddleElement)
 
-  return sumAll(middleElements)
+  return sum(middleElements)
 }
 
 export function part2(input) {
@@ -76,5 +75,5 @@ export function part2(input) {
 
   const middleElements = fixed.map(getMiddleElement)
 
-  return sumAll(middleElements)
+  return sum(middleElements)
 }

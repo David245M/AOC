@@ -1,4 +1,4 @@
-import { sumAll } from "../../../utils.js"
+import { sum } from "lodash-es"
 
 function findMultiplications(input) {
   const allMatches = input.matchAll(/mul\(\d{1,3},\d{1,3}\)/g)
@@ -13,7 +13,7 @@ export function part1(input) {
     return first * second
   })
 
-  return sumAll(multiplications)
+  return sum(multiplications)
 }
 
 export function part2(input) {
@@ -33,5 +33,5 @@ export function part2(input) {
     return first * second
   })
 
-  return sumAll(multiplications)
+  return sum(multiplications)
 }
