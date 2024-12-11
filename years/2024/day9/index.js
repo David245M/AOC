@@ -1,4 +1,4 @@
-import { cloneDeep, filter, findLastIndex, indexOf, isEqual, last, lastIndexOf, range, sum } from "lodash-es"
+import { cloneDeep, filter, isEqual, last, range, sum } from "lodash-es"
 
 function formatInput(input) {
   return input.split('')

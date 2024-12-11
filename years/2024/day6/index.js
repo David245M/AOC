@@ -1,4 +1,4 @@
-import { cloneDeep, inRange, isEqual, last } from "lodash-es"
+import { cloneDeep, inRange, isEqual } from "lodash-es"
 
 function formatInput(input) {
   return input.split('\n').map((row) => row.split(''))
@@ -102,7 +102,7 @@ export function part1(input) {
     path.map((coords) => coords.join(','))
   )
 
-  return pathUnique.size
+  return pathUnique.size + 1
 }
 
 export function part2(input) {
@@ -122,9 +122,8 @@ export function part2(input) {
     const alteredMap = cloneDeep(map)
     alteredMap[y][x] = '#'
 
-    let path
     try {
-      path = getPath(alteredMap, startPoint)
+      getPath(alteredMap, startPoint)
     } catch (error) {
       obstacles.push([y, x])
     }
